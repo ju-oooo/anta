@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font: 16px Arial;
+    background-color: #fff;
+}
+
+section {
+    width: 75rem;
+    margin: auto;
+}
+
+/* 开始 start */
+/* header start */
+header {
+    min-width: 75rem;
+    background-color: #fff;
+    height: 4rem;
+}
+
+/* header end */
+/* footer start */
+footer {
+    min-width: 75rem;
+    height: 4rem;
+}
+
+/* footer end */
