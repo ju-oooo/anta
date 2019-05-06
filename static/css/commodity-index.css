@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*轮播图 start*/
+section {
+  width: 100%;
+  min-width: 75rem; }
+  section .slides .slides-img li a {
+    display: block;
+    width: 100%; }
+    section .slides .slides-img li a img {
+      width: 100%;
+      height: 100%; }
+  section .slides .slides-tag {
+    position: relative;
+    display: flex;
+    justify-content: center; }
+    section .slides .slides-tag li {
+      display: inline-block;
+      margin: 1rem 0;
+      border: 0.05rem solid #ffffff; }
+      section .slides .slides-tag li a {
+        text-align: center;
+        width: 6rem;
+        padding: 0.5rem 2rem;
+        background-color: #4D4D4D;
+        color: #ffffff;
+        font-size: 0.8rem;
+        display: block; }
+        section .slides .slides-tag li a:hover {
+          background-color: #E74D4D; }
+    section .slides .slides-tag li.active a {
+      background-color: #E74D4D; }
+
+/*# sourceMappingURL=commodity-index.css.map */
