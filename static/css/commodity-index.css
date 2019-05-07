@@ -1,23 +1,34 @@
 @charset "UTF-8";
-/*轮播图 start*/
 section {
-  width: 100%;
-  min-width: 75rem; }
-  section .slides .slides-img li a {
+  width: 100%; }
+
+/*轮播图 start*/
+.slides {
+  overflow: hidden; }
+  .slides .slides-img {
+    position: relative;
+    left: 50%;
+    margin-left: -60rem;
     display: block;
-    width: 100%; }
-    section .slides .slides-img li a img {
-      width: 100%;
-      height: 100%; }
-  section .slides .slides-tag {
+    width: 120rem; }
+    .slides .slides-img li {
+      position: relative;
+      z-index: 0;
+      display: none; }
+      .slides .slides-img li.active {
+        display: block; }
+      .slides .slides-img li a img {
+        width: 100%;
+        height: 100%; }
+  .slides .slides-tag {
     position: relative;
     display: flex;
     justify-content: center; }
-    section .slides .slides-tag li {
+    .slides .slides-tag li {
       display: inline-block;
       margin: 1rem 0;
       border: 0.05rem solid #ffffff; }
-      section .slides .slides-tag li a {
+      .slides .slides-tag li a {
         text-align: center;
         width: 6rem;
         padding: 0.5rem 2rem;
@@ -25,9 +36,178 @@ section {
         color: #ffffff;
         font-size: 0.8rem;
         display: block; }
-        section .slides .slides-tag li a:hover {
+        .slides .slides-tag li a:hover {
           background-color: #E74D4D; }
-    section .slides .slides-tag li.active a {
+    .slides .slides-tag li.active a {
       background-color: #E74D4D; }
+
+/*轮播图 end*/
+/*热销 start*/
+.hotProduct {
+  background-color: #F3F3F3; }
+  .hotProduct .hotProduct-up, .hotProduct .hotProduct-down {
+    width: 75rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    color: #333333; }
+  .hotProduct .title {
+    padding: 1rem 0;
+    font-size: 1.1rem !important;
+    font-weight: bolder; }
+  .hotProduct .hotProduct-up {
+    padding: 2rem 0; }
+    .hotProduct .hotProduct-up li {
+      box-sizing: border-box;
+      width: 49.5%;
+      text-align: center; }
+      .hotProduct .hotProduct-up li div {
+        position: relative;
+        font-size: 0; }
+        .hotProduct .hotProduct-up li div .elect {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0; }
+          .hotProduct .hotProduct-up li div .elect:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.4); }
+          .hotProduct .hotProduct-up li div .elect a {
+            position: absolute;
+            display: block;
+            top: 12rem;
+            left: 15rem;
+            width: 8rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: bolder;
+            border: 0.05rem solid #ffffff;
+            border-radius: 0.25rem;
+            background-color: transparent;
+            z-index: 1;
+            transition: all 0.3s; }
+            .hotProduct .hotProduct-up li div .elect a::after {
+              top: 0;
+              left: 0;
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 100%;
+              z-index: -1;
+              display: block;
+              background-color: #ffffff;
+              transition: all 0.3s; }
+            .hotProduct .hotProduct-up li div .elect a:hover {
+              color: #000000; }
+            .hotProduct .hotProduct-up li div .elect a:hover::after {
+              width: 100%; }
+        .hotProduct .hotProduct-up li div img {
+          width: 100%; }
+      .hotProduct .hotProduct-up li p {
+        font-size: 0; }
+        .hotProduct .hotProduct-up li p span {
+          font-size: 0.9rem; }
+          .hotProduct .hotProduct-up li p span + span::before {
+            content: "|";
+            padding: 0 0.5rem; }
+  .hotProduct .hotProduct-down {
+    padding-bottom: 1rem; }
+    .hotProduct .hotProduct-down li {
+      width: 33%;
+      text-align: center; }
+      .hotProduct .hotProduct-down li div {
+        position: relative;
+        font-size: 0; }
+        .hotProduct .hotProduct-down li div .elect {
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          opacity: 0; }
+          .hotProduct .hotProduct-down li div .elect:hover {
+            opacity: 1;
+            background-color: rgba(0, 0, 0, 0.4); }
+          .hotProduct .hotProduct-down li div .elect a {
+            position: absolute;
+            display: block;
+            top: 9rem;
+            left: 8.5rem;
+            width: 8rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: bolder;
+            border: 0.05rem solid #ffffff;
+            border-radius: 0.25rem;
+            background-color: transparent;
+            z-index: 1;
+            transition: all 0.3s; }
+            .hotProduct .hotProduct-down li div .elect a::after {
+              top: 0;
+              left: 0;
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 100%;
+              z-index: -1;
+              display: block;
+              background-color: #ffffff;
+              transition: all 0.3s; }
+            .hotProduct .hotProduct-down li div .elect a:hover {
+              color: #000000; }
+            .hotProduct .hotProduct-down li div .elect a:hover::after {
+              width: 100%; }
+        .hotProduct .hotProduct-down li div img {
+          width: 100%; }
+
+/*热销 end*/
+/*新品 start*/
+.newProduct > p {
+  text-align: center;
+  padding: 1.5rem 0; }
+  .newProduct > p a {
+    display: block;
+    color: #333333;
+    padding: 0.5rem 0; }
+    .newProduct > p a:first-child {
+      font-size: 1.7rem;
+      text-space: 1rem; }
+    .newProduct > p a:last-child {
+      font-size: 2rem;
+      font-weight: bolder; }
+.newProduct ul {
+  width: 75rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  color: #333333; }
+  .newProduct ul .title {
+    font-size: 1.7rem;
+    padding: 0.5rem 0; }
+  .newProduct ul .describe {
+    font-size: 0.8rem; }
+  .newProduct ul p {
+    text-align: center;
+    padding: 0.25rem 0; }
+  .newProduct ul li {
+    width: 49.5%; }
+    .newProduct ul li div a {
+      display: block; }
+      .newProduct ul li div a img {
+        width: 100%; }
+    .newProduct ul li p .buy {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      padding: 0.4rem 1.5rem;
+      color: #000000;
+      font-weight: bolder;
+      border: 0.05rem solid #000000;
+      display: inline-block; }
+
+/*新品 end*/
 
 /*# sourceMappingURL=commodity-index.css.map */
