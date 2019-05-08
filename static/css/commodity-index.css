@@ -199,14 +199,36 @@ section {
       display: block; }
       .newProduct ul li div a img {
         width: 100%; }
-    .newProduct ul li p .buy {
+    .newProduct ul li p a {
+      position: relative;
+      display: inline-block;
+      width: 8rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
       font-size: 0.9rem;
-      margin-top: 1rem;
-      padding: 0.4rem 1.5rem;
+      text-align: center;
       color: #000000;
       font-weight: bolder;
       border: 0.05rem solid #000000;
-      display: inline-block; }
+      border-radius: 0.25rem;
+      background-color: transparent;
+      z-index: 1;
+      transition: all 0.3s; }
+      .newProduct ul li p a::after {
+        top: 0;
+        left: 0;
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        display: block;
+        background-color: #000000;
+        transition: all 0.3s; }
+      .newProduct ul li p a:hover {
+        color: #ffffff; }
+      .newProduct ul li p a:hover::after {
+        width: 100%; }
 
 /*新品 end*/
 

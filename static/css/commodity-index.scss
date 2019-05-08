@@ -312,15 +312,42 @@ section {
       }
 
       p {
-
-        .buy {
+        a {
+          position: relative;
+          display: inline-block;
+          width: 8rem;
+          height: 2.5rem;
+          line-height: 2.5rem;
           font-size: 0.9rem;
-          margin-top: 1rem;
-          padding: 0.4rem 1.5rem;
+          text-align: center;
           color: $black;
           font-weight: bolder;
           border: 0.05rem solid $black;
-          display: inline-block;
+          border-radius: 0.25rem;
+          background-color: transparent;
+          z-index: 1;
+          transition: all 0.3s;
+
+          &::after {
+            top: 0;
+            left: 0;
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            z-index: -1;
+            display: block;
+            background-color: $black;
+            transition: all 0.3s;
+          }
+
+          &:hover {
+            color: $white;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
         }
       }
     }
