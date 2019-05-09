@@ -5,3 +5,28 @@ $white: #ffffff;
 $black: #000000;
 $light-gray: #F3F3F3;
 $light-black: #333333;
+$dark-red: #DD0000;
+
+//路径 start
+.path {
+  display: flex;
+  background-color: $light-gray;
+  padding: 1rem;
+
+  li {
+    a {
+      color: $gray;
+
+      &:hover {
+        color: $dark-red;
+      }
+    }
+
+    & + li:before {
+      content: '/';
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+//路径 end
