@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUA,KAAM;EACJ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAPL,OAAO;EAQlB,OAAO,EAAE,IAAI;EAGX,UAAE;IACA,KAAK,EAfJ,OAAO;IAiBR,gBAAQ;MACN,KAAK,EAbF,OAAO;EAiBd,oBAAc;IACZ,OAAO,EAAE,GAAG;IACZ,OAAO,EAAE,QAAQ",
+"sources": ["commodity-detail.scss"],
+"names": [],
+"file": "commodity-detail.css"
+}

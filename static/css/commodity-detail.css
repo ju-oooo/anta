@@ -1,0 +1,13 @@
+.path {
+  display: flex;
+  background-color: #F3F3F3;
+  padding: 1rem; }
+  .path li a {
+    color: #4D4D4D; }
+    .path li a:hover {
+      color: #DD0000; }
+  .path li + li:before {
+    content: '/';
+    padding: 0 0.5rem; }
+
+/*# sourceMappingURL=commodity-detail.css.map */
