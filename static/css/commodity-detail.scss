@@ -3,6 +3,7 @@ $red: #E74D4D;
 $gray: #4D4D4D;
 $white: #ffffff;
 $black: #000000;
+$light-o-gray: #B5B5B5;
 $light-gray: #F3F3F3;
 $light-black: #333333;
 $dark-red: #DD0000;
@@ -30,3 +31,176 @@ $dark-red: #DD0000;
 }
 
 //路径 end
+
+//商品详情 start
+.detail {
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+
+  .detail-left {
+    width: 35rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .detail-right {
+    width: 40rem;
+    padding-left: 1rem;
+    box-sizing: border-box;
+
+    .title {
+      font-weight: bolder;
+      font-size: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    .price {
+      color: $red;
+      font-size: 1.8rem;
+      padding-bottom: 1rem;
+    }
+
+    .btn {
+      display: flex;
+      padding-bottom: 1rem;
+      justify-content: center;
+
+      a {
+        width: 10rem;
+        height: 2.7rem;
+        color: $white;
+        line-height: 2.7rem;
+        text-align: center;
+
+        &.cart {
+          margin-right: 3.5rem;
+          background-color: $black;
+        }
+
+        &.buy {
+          background-color: $red;
+        }
+
+      }
+    }
+  }
+}
+
+.operation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  padding-bottom: 3rem;
+
+  a {
+    display: block;
+    width: 10rem;
+    height: 2.7rem;
+    line-height: 2.7rem;
+    text-align: center;
+    margin: 0 2.5rem;
+
+    &.share {
+      background-color: $light-gray;
+      color: $black;
+    }
+
+    &.collection {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+//商品详情 end
+
+//猜你喜欢 start
+.guess {
+  padding: 5rem 0;
+  border-bottom: 0.1rem solid $gray;
+  border-top: 0.1rem solid $gray;
+  & > p {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .guess-list {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      box-sizing: border-box;
+      width: 15rem;
+      height: 15rem;
+      border: 0.1rem solid $light-gray;
+      margin: 0.5rem;
+      overflow: hidden;
+
+      a {
+        display: block;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+//猜你喜欢 end
+
+//产品细节 start
+.introduce {
+
+
+  & > p {
+    display: flex;
+    justify-content: center;
+
+    a {
+      margin: 5rem 2rem ;
+      display: block;
+      text-align: center;
+      width: 10rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      font-size: 1.2rem;
+      color: $white;
+      border-radius: 0.25rem;
+
+      &:nth-child(1) {
+        background-color: $light-o-gray;
+      }
+
+      &.active:after {
+        width: 0;
+        content: "";
+        display: block;
+        border: 0.5rem solid transparent;
+        border-top-color: $light-o-gray;
+        margin: auto;
+      }
+
+      &:nth-child(2) {
+        background-color: black;
+      }
+    }
+  }
+
+  .introduce-details {
+    padding: 0 10rem;
+
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+}
+
+//产品细节 end
+
