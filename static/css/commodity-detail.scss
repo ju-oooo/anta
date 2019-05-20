@@ -51,21 +51,51 @@ $dark-red: #DD0000;
     padding-left: 1rem;
     box-sizing: border-box;
 
+
     .title {
       font-weight: bolder;
       font-size: 1.5rem;
-      padding-bottom: 1rem;
+    }
+
+    p:not(.title) {
+      margin: 1.5rem 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .price {
       color: $red;
       font-size: 1.8rem;
-      padding-bottom: 1rem;
+    }
+
+
+    .type {
+
+    }
+
+    .time {
+
+    }
+
+    .surplus {
+
+    }
+
+    .sold {
+
+    }
+
+    .hint {
+      display: block;
+      color: $gray;
+      padding: 0.8rem;
+      background-color: $light-gray;
     }
 
     .btn {
+      margin: 1rem 0;
       display: flex;
-      padding-bottom: 1rem;
       justify-content: center;
 
       a {
@@ -122,6 +152,7 @@ $dark-red: #DD0000;
   padding: 5rem 0;
   border-bottom: 0.1rem solid $gray;
   border-top: 0.1rem solid $gray;
+
   & > p {
     font-size: 2rem;
     text-align: center;
@@ -162,7 +193,7 @@ $dark-red: #DD0000;
     justify-content: center;
 
     a {
-      margin: 5rem 2rem ;
+      margin: 5rem 2rem;
       display: block;
       text-align: center;
       width: 10rem;
